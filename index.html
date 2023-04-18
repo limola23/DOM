@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Login</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <input id="username" type="text" placeholder="Usuario">
-    <input id="password" type="password" placeholder="Contraseña">
-    <button onclick="logIn()">Disparar</button>
+    <h1 class="d-flex justify-content-center align-items-center pt-5">Login</h1>
+    <div class="d-flex flex-column p-5 m-5 gap-3">
+    <input id="username" type="text" placeholder="Usuario" class="input-group-sm ps-2">
+    <input id="password" type="password" placeholder="Contraseña" class="input-group-sm ps-2">
+    <button onclick="logIn()" class="btn btn-dark">Log In</button>
+</div>
 
     <script src="script.js"></script>
 </body>
