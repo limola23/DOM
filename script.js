@@ -36,6 +36,4 @@ function logIn() {
             }
         }
     }
-    
-    alert("Datos de inicio de sesión incorrectos");
 }
