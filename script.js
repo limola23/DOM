@@ -22,7 +22,7 @@ let bd = [
 ]
 
 function logIn() {
-    let username, email = document.querySelector("#username").value;
+    let username = document.querySelector("#username").value;
     let password = document.querySelector("#password").value;
     
     for (let data of bd) {
@@ -30,7 +30,8 @@ function logIn() {
             if (data.password === password) {
                 alert("Inicio de sesión exitoso");
                 return;
-            } else {
+            } 
+            else {
                 alert("Datos de inicio de sesión incorrectos");
                 return;
             }
