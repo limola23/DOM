@@ -27,12 +27,12 @@ function logIn() {
     
     for (let data of bd) {
         if (data.username === username || data.email === username) {
-            if (data.password === password) {
+            if (data.password === password && data.active === true) {
                 alert("Inicio de sesión exitoso");
                 return;
             } 
             else {
-                alert("Datos de inicio de sesión incorrectos");
+                alert("Datos de inicio de sesión incorrectos o usuario desactivado");
                 return;
             }
         }
