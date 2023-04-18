@@ -22,11 +22,11 @@ let bd = [
 ]
 
 function logIn() {
-    let username = document.querySelector("#username").value;
+    let username, email = document.querySelector("#username").value;
     let password = document.querySelector("#password").value;
     
     for (let data of bd) {
-        if (data.username === username) {
+        if (data.username === username || data.email === username) {
             if (data.password === password) {
                 alert("Inicio de sesión exitoso");
                 return;
